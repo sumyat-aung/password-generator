@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Generate a secure password using our generator tool. Help prevent a security threat by getting a string password"
+    />
+    <meta name="keywords" content="Password Generator" />
+    <meta name="author" content="Su Myat Aung" />
+
+    <title>Password Generator</title>
+
+    <!--css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+    <!-- fontsawrsome kit  -->
+    <script
+      src="https://kit.fontawesome.com/9f5c644af7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- fonts link  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"><h1>PASSWORD GENERATOR</h1></div>
+      <div class="main">
+        <div class="result-box">
+          <div id="result"></div>
+          <i class="fa-solid fa-clipboard" id="copy"></i>
+        </div>
+        <div class="allInput">
+          <div>
+            <label for="length">Password length</label>
+            <input type="number" name="length" id="length" />
+          </div>
+          <div>
+            <label for="upper"> Include uppercase (A-Z) </label>
+            <input type="checkbox" name="upper" id="upper" />
+          </div>
+          <div>
+            <label for="lower"> Include lowercase (a-z) </label>
+            <input type="checkbox" name="lower" id="lower" />
+          </div>
+          <div>
+            <label for="numbers"> Include numbers (1-10) </label>
+            <input type="checkbox" name="numbers" id="numbers" />
+          </div>
+          <div>
+            <label for="symbols"> Include symbols </label>
+            <input type="checkbox" name="symbols" id="symbols" />
+          </div>
+
+          <button id="generate">Generate password</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

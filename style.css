@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  color: #d3d0da;
+}
+
+body {
+  background-color: #53011b;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #53011b;
+}
+
+.header {
+  width: 600px;
+  margin: 0 0 30px 0;
+}
+
+.header h1 {
+  font-family: "Aboreto", cursive;
+  font-size: 3rem;
+  color: #d3d0da;
+  font-size: 700;
+}
+
+.main {
+  padding: 10px;
+  width: 600px;
+}
+
+.result-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  border: 0.2px solid #d3d0da;
+}
+
+#result {
+  width: 90%;
+  border: 0.2px solid #d3d0da;
+  padding: 10px;
+  font-size: 1.5rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  word-break: break-all;
+}
+
+#copy {
+  width: 10%;
+  height: 60px;
+  font-size: 1.5rem;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s linear;
+  cursor: pointer;
+}
+
+#copy:hover {
+  color: #b7b0c7;
+}
+
+.allInput div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 0.2px solid #d3d0da;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+#numbers,
+#upper,
+#lower,
+#symbols {
+  float: right;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+#length {
+  float: right;
+  width: 60px;
+  /* height: 20px; */
+  border: 0.2px solid #d3d0da;
+  background-color: #53011b;
+  padding: 10px 0px 10px 10px;
+  font-size: 1.1rem;
+}
+
+#length:focus,
+#generate:focus {
+  outline: none;
+}
+
+#generate {
+  font-size: 1.1rem;
+  background-color: #760f1c;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  padding: 20px 20px;
+  border-radius: 10px;
+  font-family: "Aboreto", cursive;
+  margin-top: 50px;
+  font-weight: 800;
+}
+
+#generate:hover {
+  background-color: #9c1326;
+}
+
+@media all and (max-width: 900px) {
+  #generate,
+  #copy {
+    cursor: default;
+  }
+}
+
+@media all and (max-height: 650px) {
+  .container {
+    height: 130vh;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .header {
+    width: 300px;
+  }
+  .main {
+    width: 380px;
+  }
+  #result {
+    width: 83%;
+  }
+
+  #copy {
+    width: 17%;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
